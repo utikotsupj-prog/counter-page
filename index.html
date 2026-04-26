@@ -16,7 +16,7 @@
 
 <script>
 fetch("https://script.google.com/macros/s/AKfycbw31cb_lX8pUqU9Zzz4Q2J5bSzdmWAk7KuhAmieGK4nALg49zmif8Y_rkyrNQw1Z25E/exec")
-  .then(res => res.json())
+  .then(res => res.text())
   .then(data => {
     document.getElementById("count").textContent =
       data.count.toLocaleString();
