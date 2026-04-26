@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Counter</title>
+<style>
+  body { font-family: sans-serif; text-align: center; padding: 30px; }
+  .number { font-size: 60px; font-weight: bold; color: #4caf50; }
+  .label { margin-top: 10px; }
+</style>
+</head>
+<body>
+<div id="count" style="font-size:60px; text-align:center; font-weight:bold;">
+  ...
+</div>
+<div class="label">人が回答しました</div>
+
 <script>
 fetch("https://script.google.com/macros/s/AKfycbw31cb_lX8pUqU9Zzz4Q2J5bSzdmWAk7KuhAmieGK4nALg49zmif8Y_rkyrNQw1Z25E/exec")
   .then(res => res.text())
@@ -5,3 +22,6 @@ fetch("https://script.google.com/macros/s/AKfycbw31cb_lX8pUqU9Zzz4Q2J5bSzdmWAk7K
     console.log("取得した値:", count);
   });
 </script>
+  
+</body>
+</html>
